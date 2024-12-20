@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Redirect Button</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-        }
-        header {
             display: flex;
-            flex-direction: row;
-            height: 4vh;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background-color: #f0f0f0;
         }
-        div {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-left: 10px;
+
+        .redirect-button {
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
         }
-        a {
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-right: 10px;
+
+        .redirect-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <header id="header">
-        <div>IFrame of 192.168.8.130. Allows you to not have to not have to memorize the ip.</div>
-        <a href="http://192.168.8.130/">Close this header</a>
-    </header>
-    <iframe src="http://192.168.8.130/" frameborder="0" width="100vw" height="96vh"></iframe>
+    
+    <a href="http://192.168.8.130/" class="redirect-button">Go to the home server</a>
+    
 </body>
 </html>
+
